@@ -1,10 +1,9 @@
-$(window).on('load', function() {
+$(document).ready(function(){
     $(".slider").slick({
         arrows: true,
         dots: true,
         infinite: true,
-        slidesToScroll: 3,
-        slidesToShow: 3,
+
         responsive: [
             {
                 breakpoint: 768,
@@ -13,6 +12,9 @@ $(window).on('load', function() {
                     slidesToShow: 1
                 }
             }
-        ]
+        ],
+
+        slidesToScroll: 3,
+        slidesToShow: 3
     });
 });
