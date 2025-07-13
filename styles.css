@@ -22,6 +22,14 @@ body {
   margin: 0;
 }
 
+body h1 {
+  text-align: start;
+  width: 100%;
+  font-size: 70%; /* Размер шрифта относительно родительского элемента */
+  text-shadow: 2px 2px 4px rgba(216, 159, 216, 0.5);
+  color: rgb(242, 237, 243);
+}
+
 h1 {
   text-align: start;
   width: 100%;
