@@ -25,7 +25,7 @@ body {
 h1 {
   text-align: start;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 70%; /* Уменьшаем размер шрифта до 80% от размера родительского элемента */
   text-shadow: 2px 2px 4px rgba(216, 159, 216, 0.5);
   color: rgb(242, 237, 243);
 }
