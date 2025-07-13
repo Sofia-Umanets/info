@@ -5,6 +5,87 @@ body {
   font-size: 26px;
 }
 
+
+.hero-section {
+    height: 45vh;
+    background: url('hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.hero-background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-text-box {
+    max-width: 90%;
+    margin: 0 auto;
+    data-aos="fade-right";
+}
+
+.hero-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hero-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 45%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-image-caption {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+
+
 .container {
   max-width: 90%;
   margin: 0 auto;
