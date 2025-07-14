@@ -99,6 +99,8 @@ h1 {
     padding-left: 20px;
     padding-right: 20px;
     line-height: 1.2;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .container {
@@ -110,33 +112,65 @@ h1 {
 /* Медиа-запросы для горизонтального положения мобильных устройств */
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .hero-section {
-        height: 90vh;
-    }
-    
-    h1 {
-        font-size: 1.8em;
-        margin-bottom: 10px;
-        margin-top: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    
-    .hero-images {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    
-    .hero-image-container {
-        max-width: 35%;
-        margin: 0 5px;
-    }
-    
-    .hero-image-caption {
-        font-size: 14px;
+        height: 95vh;
     }
     
     .hero-content {
-        padding: 10px;
+        padding: 5px;
+        height: 100%;
+        justify-content: space-between;
+    }
+    
+    h1 {
+        font-size: 1.3em !important;
+        margin-bottom: 5px;
+        margin-top: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+        line-height: 1.1;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        max-width: 95%;
+    }
+    
+    .hero-images {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        max-width: 60%;
+    }
+    
+    .hero-image-container {
+        max-width: 40%;
+        margin: 0 2px;
+    }
+    
+    .hero-image-caption {
+        font-size: 11px;
+    }
+}
+
+/* Дополнительные настройки для очень низких экранов в горизонтальном положении */
+@media screen and (max-height: 400px) and (orientation: landscape) {
+    h1 {
+        font-size: 1.1em !important;
+        line-height: 1.0;
+        margin-bottom: 2px;
+        margin-top: 0px;
+    }
+    
+    .hero-images {
+        max-width: 50%;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    
+    .hero-image-caption {
+        font-size: 10px;
+    }
+    
+    .hero-content {
+        padding: 2px;
     }
 }
 
